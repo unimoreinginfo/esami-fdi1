@@ -1,4 +1,4 @@
-# esami
+# esami-fdi1
 Soluzioni per vari esami di Fondamenti di Informatica I
 
 # Come contribuisco?
