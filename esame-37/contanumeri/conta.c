@@ -10,13 +10,15 @@ size_t contanumeri(const char* filename){
   if(!file)
     return 0;
 
-  while(!feof(file)){
-
-    char c = fgetc(file);
-    if(c >= 48 && c <= 57)
-      ++i;
-
-  }
+  while (true) {
+    int c = fgetc(file);
+    if (c == EOF) {
+        break;
+    }
+    if ('0' <= c && c <= '9') {
+        ++i;
+    }
+ } 
 
   return i;
 
